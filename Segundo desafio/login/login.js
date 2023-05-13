@@ -11,11 +11,7 @@ function validate(e) {
 
   const password = document.getElementById("password");
   if (!(user.value === "adm" && password.value === "123")) {
-    const userError = document.getElementById("userError");
-    userError.classList.add("visible");
-    user.classList.add("invalid");
-    userError.setAttribute("aria-hidden", false);
-    userError.setAttribute("aria-invalid", true);
+    alert("Usuário invalido");
     return false;
   }
   window.location.href = "gestao.html";
