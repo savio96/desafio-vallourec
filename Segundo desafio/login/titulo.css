@@ -1,0 +1,25 @@
+#userError {
+    display: none;
+    font-size: 0.8em;
+  }
+  
+  #userError.visible {
+    display: block;
+  }
+  
+  input.invalid {
+    border-color: red;
+  }
+
+  #passwordError {
+    display: none;
+    font-size: 0.8em;
+  }
+  
+  #passwordError.visible {
+    display: block;
+  }
+  
+  input.invalid {
+    border-color: red;
+  }

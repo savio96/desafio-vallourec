@@ -1,0 +1,24 @@
+{
+  "solicitacoes": [
+    {
+      "titulo": "Solicitacao Teste 1",
+      "solicitante": "Individuo",
+      "status": "solicitada"
+    },
+    {
+      "titulo": "Solicitacao Teste 2",
+      "solicitante": "Individuo",
+      "status": "programada"
+    },
+    {
+      "titulo": "Solicitacao Teste 3",
+      "solicitante": "Individuo",
+      "status": "concluida"
+    },
+    {
+      "titulo": "Solicitacao Teste 4",
+      "solicitante": "Individuo",
+      "status": "cancelada"
+    }
+  ]
+}
