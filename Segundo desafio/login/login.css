@@ -1,0 +1,57 @@
+p {
+  font-family: "Roboto";
+}
+h1 {
+  font-family: "Roboto";
+}
+label {
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #808080;
+}
+.titulo-login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 46px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.container-login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgb(113, 112, 112);
+  padding-left: 10px;
+}
+
+#submit {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  background-color: brown;
+  color: white;
+  border: 0px;
+  border-radius: 15px;
+}

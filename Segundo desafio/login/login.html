@@ -5,23 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Sistema de Gestão - Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
-    <div class="container-login">
-        <form action="">
-            <label for="user">Usuário</label><br>
-            <span role="alert" id="nameError" aria-hidden="true">
-                <input type="text" id="user" name="user"><br>
-                <label for="password">Senha</label><br>
-                <span role="alert" id="passswordError" aria-hidden="true">
-                    <input type="password" id="password" name="password">
-                    <input type="submit" id="submit" value="Submit">
-        </form>
+    <header>
+        <h1 class="titulo-login">Login</h1>
+    </header>
+    <main>
+        <div class="container-login">
+            <form>
+                <input type="text" id="user" name="user" placeholder="Digite o usuário..."><br>
+                <input type="password" id="password" name="password" placeholder="Digite a senha..."><br>
+                <input type="submit" id="submit" value="Entrar">
+            </form>
 
-    </div>
+        </div>
+    </main>
+
     <script src="login.js"></script>
 
 </body>
