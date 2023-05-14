@@ -23,7 +23,6 @@ function mostrarAdm(lista) {
   let situacao = document.querySelectorAll(".escolha-situacao");
   let prioridade = document.querySelectorAll(".escolha-prioridade");
 
-  console.log(situacao);
   let aux = 0;
   situacao.forEach((item) => {
     console.log(lista[aux]["situacao"]);
@@ -68,8 +67,6 @@ function formEvento(event) {
     lista.push(solicitacao);
     mostrar(lista);
   }
-
-  console.log(lista);
 }
 
 function geraListaPrioridade(index) {
