@@ -2,12 +2,12 @@ var lista = [
   {
     descricao: "Cola",
     situacao: "solicitada",
-    usuario: "adm",
+    usuario: "  ADM",
   },
   {
     descricao: "Papel",
     situacao: "cancelada",
-    usuario: "adm",
+    usuario: "ADM",
   },
 ];
 
@@ -17,9 +17,11 @@ form.addEventListener("submit", formEvento);
 
 function mostrar(lista) {
   let listaSolicitacoes = document.querySelector(".lista");
-  let itemOrdenado = `<ul>`;
+  let itemOrdenado = `
+  <h3>Pedidos</h3>
+  <ul class="items-container">`;
   lista.forEach((item) => {
-    itemOrdenado += `<li><p>${item["descricao"]}</p><p class="escolha-situacao">${item["situacao"]}</p><p>${item["usuario"]}</p><p class="escolha-prioridade">${item["prioridade"]}</p></li>`;
+    itemOrdenado += `<li class="item"><p class="escolha-prioridade">${item["prioridade"]}</p><p>${item["descricao"]}</p><p>${item["usuario"]}</p><p class="escolha-situacao">${item["situacao"]}</p></li>`;
   });
   itemOrdenado += "</ul>";
   listaSolicitacoes.innerHTML = itemOrdenado;
@@ -35,7 +37,7 @@ function mostrarAdm(lista) {
   situacao.forEach((item) => {
     console.log(lista[aux]["situacao"]);
     item.innerHTML = `
-  <label for="produto">Status:</label>
+  <label for="produto-status">Status:</label>
   <select id="situacao-${aux}" name="situacao">
   <option value="solicitada" ${
     lista[aux]["situacao"] === "solicitada" ? "selected" : ""
@@ -50,8 +52,8 @@ function mostrarAdm(lista) {
       lista[aux]["situacao"] === "cancelada" ? "selected" : ""
     }>Cancelada</option>
   </select>
-  <input onclick=(alterStatus(${aux})) value="Alterar">
-  <button onclick=(remover(${aux}))>Remover</button>
+  <input id=btn-alterar type="submit"  onclick=(alterStatus(${aux})) value="Alterar">
+  <button id="btn-excluir" onclick=(remover(${aux}))>Excluir</button>
 `;
     console.log(lista[aux]);
 
