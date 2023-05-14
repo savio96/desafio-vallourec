@@ -36,8 +36,8 @@ function mostrarAdm(lista) {
     <option value="programada" ${
       lista[aux]["situacao"] === "programada" ? "selected" : ""
     }>Programada</option>
-    <option value="concluida" ${
-      lista[aux]["situacao"] === "concluida" ? "selected" : ""
+    <option value="concluída" ${
+      lista[aux]["situacao"] === "concluída" ? "selected" : ""
     }>Concluída</option>
     <option value="cancelada" ${
       lista[aux]["situacao"] === "cancelada" ? "selected" : ""

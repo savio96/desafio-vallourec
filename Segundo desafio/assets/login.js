@@ -32,7 +32,7 @@ function validate(e) {
     alert("Usuário invalido");
     return false;
   }
-  window.location.href = "gestao.html";
+  window.location.href = "./Gestao/gestao.html";
   return true;
 }
 salvarStorage();
