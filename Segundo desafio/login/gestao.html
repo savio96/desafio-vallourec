@@ -5,20 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gestao.css">
+    <title>Sistema de Gestão - ADM</title>
 </head>
 
 <body>
-    <div class="container-form-pedido">
-        <form class="solicitacao-form" action="">
-            <label for="produto">Produto</label><br>
-            <span role="alert" id="produtoError" aria-hidden="true">
-                <input type="text" id="produto" name="produto" value=""><br>
+    <header>
+        <h1 class="titulo-adm">Gestão de Pedidos</h1>
+        <button class="btn-login"><a href="login.html">Login</a></button>
+    </header>
+    <main>
+        <div class="container-form-pedido">
+            <h3>Formulário de Solicitação </h3>
+            <form class="solicitacao-form" action="">
+                <input type="text" id="produto" name="produto" placeholder="Descrição" value="" required><br>
                 <input type="submit" id="submit-form" value="Solicitar">
-        </form>
-    </div>
-    <div class="lista"></div>
-    <button><a href="login.html">Login</a></button>
+            </form>
+        </div>
+        <div class="lista"></div>
+
+    </main>
+
 
     <script src="listaSolicitacao.js"></script>
 

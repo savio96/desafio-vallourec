@@ -54,4 +54,10 @@ form input[type="password"] {
   color: white;
   border: 0px;
   border-radius: 15px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+#submit:hover {
+  background-color: rgb(172, 86, 86);
 }

@@ -1,0 +1,91 @@
+body {
+  background-color: #808080;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.titulo-adm {
+  font-family: "Roboto";
+  display: flex;
+  margin: 0px auto;
+  font-size: 46px;
+  color: white;
+  text-transform: uppercase;
+}
+.btn-login {
+  margin-right: 50px;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  border: 0px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.btn-login:hover {
+  background-color: bisque;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+}
+.container-form-pedido {
+  width: 30%;
+  height: 150px;
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 3px solid rgb(48, 46, 46);
+  border-radius: 3px;
+}
+.container-form-pedido h3 {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-size: 24px;
+  color: #808080;
+}
+
+.solicitacao-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#produto {
+  width: 80%;
+  height: 30px;
+  border: 1px solid gray;
+  padding-left: 5px;
+  font-family: "Roboto";
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+#submit-form {
+  width: 82%;
+  height: 25px;
+  background-color: #90ee90;
+  cursor: pointer;
+  border: 1px solid green;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#submit-form:hover {
+  background-color: #58a358;
+}

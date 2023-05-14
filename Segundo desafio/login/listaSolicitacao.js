@@ -71,7 +71,7 @@ function formEvento(event) {
   if (produto.value != "") {
     let descricao = produto.value;
     let situacao = "solicitada";
-    let usuario = "adm";
+    let usuario = "ADM";
     let solicitacao = { descricao, situacao, usuario };
     lista.push(solicitacao);
     mostrar(lista);
