@@ -1,4 +1,22 @@
 var listaUsuarios = [{ user: "adm", senha: "123" }];
+var lista = [
+  {
+    descricao: "Cola",
+    situacao: "solicitada",
+    usuario: "  ADM",
+  },
+  {
+    descricao: "Papel",
+    situacao: "cancelada",
+    usuario: "ADM",
+  },
+];
+
+function salvarStorage() {
+  if (localStorage.getItem("lista") == null) {
+    localStorage.setItem("lista", JSON.stringify(lista));
+  }
+}
 
 const submit = document.getElementById("submit");
 
@@ -17,3 +35,4 @@ function validate(e) {
   window.location.href = "gestao.html";
   return true;
 }
+salvarStorage();

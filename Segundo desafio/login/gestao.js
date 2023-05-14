@@ -1,19 +1,10 @@
-var lista = [
-  {
-    descricao: "Cola",
-    situacao: "solicitada",
-    usuario: "  ADM",
-  },
-  {
-    descricao: "Papel",
-    situacao: "cancelada",
-    usuario: "ADM",
-  },
-];
+var lista = JSON.parse(localStorage.getItem("lista"));
 
 let form = document.querySelector(".solicitacao-form");
 
 form.addEventListener("submit", formEvento);
+let btnLogin = document.querySelector(".btn-login");
+btnLogin.addEventListener("click", sairGestao);
 
 function mostrar(lista) {
   let listaSolicitacoes = document.querySelector(".lista");
@@ -55,7 +46,6 @@ function mostrarAdm(lista) {
   <input id=btn-alterar type="submit"  onclick=(alterStatus(${aux})) value="Alterar">
   <button id="btn-excluir" onclick=(remover(${aux}))>Excluir</button>
 `;
-    console.log(lista[aux]);
 
     prioridade.forEach((item, index) => {
       item.innerHTML = `<select id="prioridade-${index}" name="prioridade ">${geraListaPrioridade(
@@ -104,6 +94,11 @@ function alterStatus(aux) {
   lista.splice(aux, 1);
   lista.splice(prioridade.value, 0, solicitacaoAux);
   mostrar(lista);
+}
+
+function sairGestao() {
+  localStorage.removeItem("lista");
+  localStorage.setItem("lista", JSON.stringify(lista));
 }
 
 function main() {
